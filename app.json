@@ -31,6 +31,12 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2aa814a0-eca5-4a91-9b56-764e8fbefcd7"
+      }
+    },
+    "owner": "fafaodj"
   }
 }
