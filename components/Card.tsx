@@ -1,12 +1,10 @@
 import { Colors } from "@/constants/Colors";
 import { Shadows } from "@/constants/Shadows";
-import { useThemeColor } from "@/hooks/useThemeColors";
 import { View, ViewProps, ViewStyle } from "react-native";
 
 type Props = ViewProps;
 
 export function Card({style, ...rest}: Props) {
-    const colors = useThemeColor();
     return <View style= {[style, styles, {backgroundColor: Colors.light.grayWhite}]} {...rest} />
 }
 

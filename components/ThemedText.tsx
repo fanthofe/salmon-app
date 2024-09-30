@@ -3,6 +3,11 @@ import { useThemeColor } from "@/hooks/useThemeColors"
 import { StyleSheet, Text, TextProps } from "react-native"
 
 const styles = StyleSheet.create({
+    clientTitle: {
+        fontWeight: "bold",
+        fontSize: 16,
+        lineHeight: 16,
+    },
     body1: {
         fontSize: 14,
         lineHeight: 16,
