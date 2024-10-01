@@ -43,6 +43,11 @@ export default function RootLayout() {
           <TabBarIcon name={focused ? 'basket' : 'basket-outline'} color={color} />
         ),
       }}/>
+    <Tabs.Screen 
+      name="client/[id]"
+      options={{
+        href: null,
+      }} />
   </Tabs>
   );
 }

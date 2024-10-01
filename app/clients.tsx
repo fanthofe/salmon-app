@@ -18,6 +18,7 @@ export default function Clients() {
                     data={clients}
                     renderItem={({item}) => 
                         <ClientCard 
+                            id={item.id}
                             name={item.name}
                             telephone={item.telephone} />
                     }
