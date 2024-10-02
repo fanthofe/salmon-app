@@ -3,6 +3,11 @@ import { useThemeColor } from "@/hooks/useThemeColors"
 import { StyleSheet, Text, TextProps } from "react-native"
 
 const styles = StyleSheet.create({
+    formTitle: {
+        fontWeight: "bold",
+        fontSize: 20,
+        lineHeight: 16,
+    },
     clientTitle: {
         fontWeight: "bold",
         fontSize: 16,
