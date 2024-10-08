@@ -1,4 +1,5 @@
 import { Body } from "@/components/Body";
+import { ButtonType } from "@/components/ButtonType";
 import { Card } from "@/components/Card";
 import { ThemedText } from "@/components/ThemedText";
 import { Colors } from "@/constants/Colors";
@@ -70,12 +71,10 @@ export default function Patente() {
                             style={styles.input}
                         />
                     </View>
-                    <Button 
-                        title="Enregistrer"
+                    <ButtonType 
                         onPress={() => Alert.alert('Modification des informations clients')}
-                        color={Colors.light.tint}
-                        accessibilityLabel="Modifie les informations d'un client"
-                        style={styles.submit}
+                        title="Enregistrer"
+                        alt="Modifie les informations d'un client"
                     />
                 </SafeAreaView>
             </Card>

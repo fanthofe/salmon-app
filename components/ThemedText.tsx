@@ -13,6 +13,11 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 16,
     },
+    button: {
+        fontWeight: "bold",
+        fontSize: 18,
+        lineHeight: 18,
+    },
     body1: {
         fontSize: 14,
         lineHeight: 16,
