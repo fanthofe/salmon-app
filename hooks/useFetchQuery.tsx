@@ -35,7 +35,6 @@ export function useInfiniteFetchQuery<T extends keyof API>(path : T) {
             return fetch(pageParam, {
                 headers: {
                     Accept: 'application/json',
-                    AcceptLanguage: 'FR'
                 }
             }).then(res => res.json() as Promise<API[T]>);
         },

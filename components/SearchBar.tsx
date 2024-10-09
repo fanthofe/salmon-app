@@ -1,4 +1,5 @@
 import { Colors } from "@/constants/Colors"
+import { useThemeColor } from "@/hooks/useThemeColors"
 import { Ionicons } from "@expo/vector-icons"
 import { StyleSheet, TextInput, View } from "react-native"
 
@@ -9,28 +10,31 @@ type Props = {
 }
 
 export function SearchBar ({value, onChange}: Props) {
-    return <View style={styles.input}>
-        <Ionicons name="search" size={24} color={Colors.light.tint} />
+    const colors = useThemeColor();
+
+    return <View style={styles.wrapper}>
+        <Ionicons name="search" size={24} color={colors.tint} />
         <TextInput 
             onChangeText={onChange} 
             value={value} 
-            style={styles.text}
+            style={styles.input}
             placeholder="Recherche" />
     </View>
 }
 
 const styles = StyleSheet.create({
-    input: {
+    wrapper: {
         flexDirection: 'row',
         gap: 10,
         backgroundColor: Colors.light.grayWhite,
         paddingVertical: 10,
         paddingHorizontal: 20,
         marginHorizontal: 20,
-        marginBottom: 24,
+        marginBottom: 17,
         borderRadius: 50
     }, 
-    text : {
+    input : {
+        flex: 1,
         color: Colors.light.tint
     }
 })

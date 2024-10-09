@@ -16,8 +16,9 @@ export default function Clients() {
     }));
 
     const {data, isFetching, fetchNextPage} = useInfiniteFetchQuery('/pokemon?limit=20');
-    const clientes = data?.pages.flatMap(page => page.results) ?? [];
     const [search, setSearch] = useState('');
+    const clientes = data?.pages.flatMap(page => page.results) ?? [];
+    const filteredClientes = search ? clientes.filter(p => p.name.includes(search.toLowerCase())) : clientes;
 
     return (
         <Body iconType="people" mainTitle="Gestion des clients">
@@ -26,7 +27,7 @@ export default function Clients() {
             </View>
             <Card style={styles.mainCard}>
                 <FlatList 
-                    data={clientes}
+                    data={filteredClientes}
                     renderItem={({item}) => 
                         <ClientCard 
                             id={getClientId(item.url)}
@@ -39,7 +40,7 @@ export default function Clients() {
                         isFetching ? <View style={styles.loader}><ActivityIndicator size='large' color={Colors.light.tint} /></View> : null
                     }
                     // Détecte la fin d'une liste
-                    onEndReached={() => fetchNextPage()}
+                    onEndReached={search ? undefined : () => fetchNextPage()}
                 />
             </Card>
         </Body>
