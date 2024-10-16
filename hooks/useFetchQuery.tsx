@@ -3,7 +3,13 @@ import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 const endpoint = "https://pokeapi.co/api/v2";
 
 type API = {
-    '/pokemon?limit=20': {
+    '/pokemon?limit=20' : {
+        count: number,
+        next: string | null,
+        // le type Results est un tableau de name et url répété plusieurs fois donc array
+        results: {name: string, url: string}[] 
+    },
+    '/pokemon?limit=151': {
         count: number,
         next: string | null,
         // le type Results est un tableau de name et url répété plusieurs fois donc array
@@ -20,7 +26,11 @@ export function useFetchQuery<T extends keyof API>(path: T) {
         queryFn: async () => {
             await wait(1);
             // On retourne une promesse de API dont la clé est T
-            return fetch(endpoint + path).then(res => res.json() as Promise<API[T]>);
+            return fetch(endpoint + path).then(
+                (res) => {
+                    return res.json() as Promise<API[T]>
+                }
+            );
         }
     });
 }

@@ -29,9 +29,8 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.light.grayWhite,
         paddingVertical: 10,
         paddingHorizontal: 20,
-        marginHorizontal: 20,
-        marginBottom: 17,
-        borderRadius: 50
+        borderRadius: 50,
+        flex: 1
     }, 
     input : {
         flex: 1,
