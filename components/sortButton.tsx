@@ -21,9 +21,9 @@ export function SortButton({value, onChange} : Props) {
         setShowModal(false);
     }
     const options = [
-        {label: "Number", value: "id"},
-        {label: "Name", value: "name"}
-    ]
+        {label: "Numéro client", value: "id"},
+        {label: "Nom", value: "name"}
+    ] as const;
 
     return (
       <>
@@ -37,18 +37,19 @@ export function SortButton({value, onChange} : Props) {
           <View style={[styles.popup, { backgroundColor: colors.tint }]}>
             <ThemedText
               style={styles.title}
-              variant="subtitle2"
+              variant="subtitle1"
               color="grayWhite"
             >
               Trier par :
             </ThemedText>
             <Card style={styles.card}>
               {options.map((item) => (
-                <View key={item.value}>
-                    <Radio checked={false}/>
-                    <Radio checked={true}/>
-                    <ThemedText>{item.label}</ThemedText>
-                </View>
+                <Pressable onPress={() => onChange(item.value)}>
+                  <View key={item.value} style={styles.rowRadio}>
+                      <Radio checked={item.value === value}/>
+                      <ThemedText variant="body1">{item.label}</ThemedText>
+                  </View>
+                </Pressable>
               ))}
             </Card>
           </View>
@@ -76,10 +77,19 @@ const styles = StyleSheet.create({
         gap: 16
     },
     title : {
-        paddingLeft: 10
+        paddingLeft: 10,
+        paddingTop: 10
     },
     card: {
         paddingHorizontal: 20,
-        paddingVertical: 16
+        paddingVertical: 16,
+        gap: 10
+    },
+    rowRadio: {
+      flexDirection: 'row',
+      gap: 7
+    },
+    cardRadio: {
+      gap: 5
     }
 });

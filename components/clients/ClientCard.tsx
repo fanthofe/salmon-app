@@ -11,19 +11,23 @@ type Props = {
 }
 
 export function ClientCard({ name, id, telephone } : Props) {
+
     return (                
-      <Link href={{pathname: "/client/[id]", params: {id: id}}} asChild>
+      <Link push href={{pathname: "/clients/[id]", params: {id: id}}} asChild>
         <Pressable android_ripple={{color: Colors.light.tint, foreground: true}}>
-          <View style={{paddingHorizontal: 12}}>
+          <View style={styles.clientElement}>
               <View style={styles.clientCard}>
-                  <View>  
-                      <Image style={styles.avatar}
-                      source={{uri: 
-                        `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`}}/>
-                  </View>
-                  <View style={styles.informationContent}>
-                      <ThemedText variant="clientTitle">{ToCapitalize(name)}</ThemedText>
-                      <ThemedText variant="body1">{telephone}</ThemedText>
+                  <ThemedText variant="subtitle2" style={{paddingTop: 5}}>#{id}</ThemedText>
+                  <View style={styles.clientContent}>
+                    <View>  
+                        <Image style={styles.avatar}
+                        source={{uri: 
+                          `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`}}/>
+                    </View>
+                    <View style={styles.informationContent}>
+                        <ThemedText variant="clientTitle">{ToCapitalize(name)}</ThemedText>
+                        <ThemedText variant="body1">{telephone}</ThemedText>
+                    </View>
                   </View>
               </View>
               <View style={styles.renderSeparator}></View>
@@ -34,8 +38,15 @@ export function ClientCard({ name, id, telephone } : Props) {
 }
 
 const styles = StyleSheet.create({
+    clientElement: {
+      paddingHorizontal: 12, 
+    },
     clientCard: {
       paddingVertical: 12,
+      flexDirection: "row",
+      gap: 3
+    },
+    clientContent: {
       flexDirection: "row",
       gap: 10
     },

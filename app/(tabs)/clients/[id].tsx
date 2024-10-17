@@ -3,7 +3,7 @@ import { ButtonType } from "@/components/ButtonType";
 import { Card } from "@/components/Card";
 import { ThemedText } from "@/components/ThemedText";
 import { Colors } from "@/constants/Colors";
-import { useLocalSearchParams } from "expo-router";
+import { router, useLocalSearchParams } from "expo-router";
 import { useState } from "react";
 import { Alert, StyleSheet, TextInput, View, Button } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -19,6 +19,7 @@ export default function Patente() {
 
     return (
         <Body iconType="" mainTitle={"Client " + params.id.toString()}>
+            <Button title="Back" onPress={() => router.back()}/>
             <Card style={styles.mainCard}>
                 <SafeAreaView style={{paddingHorizontal: 15}}>
                     <View>
