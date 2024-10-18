@@ -2,31 +2,32 @@ import { Image, Pressable, StyleSheet, View } from "react-native";
 import { ThemedText } from "../ThemedText";
 import { Link } from "expo-router";
 import { Colors } from "@/constants/Colors";
-import { ToCapitalize } from "@/functions/functions";
+import { formatDate, ToCapitalize } from "@/functions/functions";
 
 type Props = {
-    name: string,
     id: number,
-    telephone: string
+    idCommand: string,
+    dateCreation: Date,
+    prix: number,
+    statut: number,
+    name: string,
 }
 
-export function ClientCard({ name, id, telephone } : Props) {
+export function CommandCard({ id, idCommand, dateCreation, prix, statut, name } : Props) {
+    const listStatut = ['Création de livraison', 'En cours de livraison', 'Livrée'];
 
     return (                
-      <Link push href={{pathname: "/clients/[id]", params: {id: id}}} asChild>
+      <Link push href={{pathname: "/commandes/[id]", params: {id: id}}} asChild>
         <Pressable android_ripple={{color: Colors.light.tint, foreground: true}}>
           <View style={styles.clientElement}>
               <View style={styles.clientCard}>
-                  <ThemedText variant="subtitle2" style={{paddingTop: 5}}>#{id}</ThemedText>
                   <View style={styles.clientContent}>
-                    <View>  
-                        <Image style={styles.avatar}
-                        source={{uri: 
-                          `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`}}/>
-                    </View>
                     <View style={styles.informationContent}>
-                        <ThemedText variant="clientTitle">{ToCapitalize(name)}</ThemedText>
-                        <ThemedText variant="body1">{telephone}</ThemedText>
+                        <ThemedText variant="clientTitle">{idCommand}</ThemedText>
+                        <ThemedText variant="body1">{(formatDate(dateCreation)).toString()}</ThemedText>
+                        <ThemedText variant="body1">{prix}€</ThemedText>
+                        <ThemedText variant="body1">{listStatut[statut]}</ThemedText>
+                        <ThemedText variant="body1">Client : {ToCapitalize(name)}</ThemedText>
                     </View>
                   </View>
               </View>

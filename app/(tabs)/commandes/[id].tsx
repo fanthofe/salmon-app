@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Alert, StyleSheet, TextInput, View, Button } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function idClients() {
+export default function idCommandes() {
     const params = useLocalSearchParams();
     const [lastname, setLastName] = useState('');
     const [firstname, setFirstName] = useState('');

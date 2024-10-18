@@ -9,7 +9,7 @@ import { SearchBar } from "@/components/SearchBar";
 import { useState } from "react";
 import { SortButton } from "@/components/sortButton";
 
-export default function Clients() {
+export default function indexClients() {
     // const clients = Array.from({length: 20}, (_, k) => ({
     //     id: k + 1,
     //     name: 'John Mayer',
