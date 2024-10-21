@@ -1,4 +1,4 @@
-import { Image, Pressable, StyleSheet, View } from "react-native";
+import { Pressable, StyleSheet, View } from "react-native";
 import { ThemedText } from "../ThemedText";
 import { Link } from "expo-router";
 import { Colors } from "@/constants/Colors";
@@ -8,12 +8,13 @@ type Props = {
     id: number,
     idCommand: string,
     dateCreation: Date,
-    prix: number,
+    dateLivraison: Date,
+    prix: string,
     statut: number,
     name: string,
 }
 
-export function CommandCard({ id, idCommand, dateCreation, prix, statut, name } : Props) {
+export function CommandCard({ id, idCommand, dateCreation, dateLivraison, prix, statut, name } : Props) {
     const listStatut = ['Création de livraison', 'En cours de livraison', 'Livrée'];
 
     return (                
@@ -23,9 +24,10 @@ export function CommandCard({ id, idCommand, dateCreation, prix, statut, name } 
               <View style={styles.clientCard}>
                   <View style={styles.clientContent}>
                     <View style={styles.informationContent}>
-                        <ThemedText variant="clientTitle">{idCommand}</ThemedText>
+                        <ThemedText variant="commandTitle">{idCommand}</ThemedText>
                         <ThemedText variant="body1">{(formatDate(dateCreation)).toString()}</ThemedText>
-                        <ThemedText variant="body1">{prix}€</ThemedText>
+                        <ThemedText variant="body1">{(formatDate(dateLivraison)).toString()}</ThemedText>
+                        <ThemedText variant="price">{prix}€</ThemedText>
                         <ThemedText variant="body1">{listStatut[statut]}</ThemedText>
                         <ThemedText variant="body1">Client : {ToCapitalize(name)}</ThemedText>
                     </View>
