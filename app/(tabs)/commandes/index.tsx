@@ -4,6 +4,7 @@ import { Body } from "@/components/Body";
 import { CommandCard } from "@/components/commandes/CommandCard";
 import { formatDate } from "@/functions/functions";
 import { DataCommandes } from "@/components/commandes/DataCommandes";
+import { DayCommandCard } from "@/components/commandes/DayCommandCard";
 
 export default function indexCommandes() {
 
@@ -34,12 +35,16 @@ export default function indexCommandes() {
   uniqDateCreations.sort((a, b) => a.split('/').reverse().join().localeCompare(b.split('/').reverse().join()));
   
   const data = DataCommandes();
-  console.log(data)
 
   return (
     <Body iconType="basket" mainTitle="Gestion des commandes">
         <Card style={styles.mainCard}>
-        <FlatList 
+          {uniqDateCreations.map((val) => {
+            return (
+              <DayCommandCard commandes={data[val]} indexDate={val} />
+            )
+          })}
+        {/* <FlatList 
             data={commandes}
             renderItem={({item}) => 
                 <CommandCard 
@@ -53,7 +58,7 @@ export default function indexCommandes() {
                 />
             }
             keyExtractor={(item) => item.id.toString()}
-        />
+        /> */}
         </Card>
     </Body>
   );

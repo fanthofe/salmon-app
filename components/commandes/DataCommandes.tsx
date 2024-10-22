@@ -23,14 +23,16 @@ export function DataCommandes() {
       );
     
       const listDateCreation = commandes.map(date => formatDate(date.dateCreation).toString());
-      const uniqDateCreations = [... new Set(listDateCreation)];
-      uniqDateCreations.sort((a, b) => a.split('/').reverse().join().localeCompare(b.split('/').reverse().join()));
+      const dates = [... new Set(listDateCreation)];
+      dates.sort((a, b) => a.split('/').reverse().join().localeCompare(b.split('/').reverse().join()));
       
-      const commandesByDateLivraison = [];
-      commandesByDateLivraison.push(...commandes.filter(item => uniqDateCreations.includes(formatDate(item.dateCreation).toString())))
-    //   uniqDateCreations.map((item, index) => {
-    //     commandesByDateLivraison.push(commandes.filter(commande => formatDate(commande.dateLivraison).toString() == item))
-    //   })
+      // const dates = [...new Set(commandes.map(commande => commande.dateCreation.toISOString().split('T')[0]))];
 
-      return commandesByDateLivraison;
+      const commandesParDate = dates.reduce((acc, date) => {
+        acc[date] = commandes.filter(commande => formatDate(commande.dateCreation).toString() === date);
+        return acc;
+      }, {});
+      // commandesByDateLivraison.push(...commandes.filter(item => uniqDateCreations.includes(formatDate(item.dateCreation).toString())))
+
+      return commandesParDate;
 }
