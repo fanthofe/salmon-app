@@ -1,4 +1,4 @@
-import { FlatList } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
 import { CommandCard } from "./CommandCard";
 import { Command } from "@/utils/interface";
 import { ThemedText } from "../ThemedText";
@@ -11,8 +11,8 @@ type Props = {
 export function DayCommandCard({commandes, indexDate} : Props) {
     
     return (
-        <>
-            <ThemedText>{indexDate}</ThemedText>
+        <View style={styles.mainCard}>
+            <ThemedText variant="dateCommandTitle" color="tint">{indexDate}</ThemedText>
             <FlatList 
             data={commandes}
             renderItem={({item}) => 
@@ -28,7 +28,14 @@ export function DayCommandCard({commandes, indexDate} : Props) {
             }
             horizontal
             keyExtractor={(item) => item.id.toString()}
-        />
-        </>
+            />
+        </View>
     );
 }
+
+const styles = StyleSheet.create({
+    mainCard: {
+        padding: 12,
+        gap: 4
+    },
+})

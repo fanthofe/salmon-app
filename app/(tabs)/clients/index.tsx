@@ -34,7 +34,6 @@ export default function indexClients() {
             : clientes),
     ].sort((a, b) => a[sortKey] < b[sortKey] ? -1 : 1);
 
-    // .sort((a, b) => a[sortKey] < b[sortKey] ? -1 : 1)
     return (
         <Body iconType="people" mainTitle="Gestion des clients">
             <View style={styles.buttonField}>

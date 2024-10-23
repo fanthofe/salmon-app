@@ -19,21 +19,17 @@ export function CommandCard({ id, idCommand, dateCreation, dateLivraison, prix, 
 
     return (                
       <Link push href={{pathname: "/commandes/[id]", params: {id: id}}} asChild>
-        <Pressable android_ripple={{color: Colors.light.tint, foreground: true}}>
-          <View style={styles.clientElement}>
-              <View style={styles.clientCard}>
-                  <View style={styles.clientContent}>
-                    <View style={styles.informationContent}>
-                        <ThemedText variant="commandTitle">{idCommand}</ThemedText>
-                        <ThemedText variant="body1">{(formatDate(dateCreation)).toString()}</ThemedText>
-                        <ThemedText variant="body1">{(formatDate(dateLivraison)).toString()}</ThemedText>
-                        <ThemedText variant="price">{prix}€</ThemedText>
-                        <ThemedText variant="body1">{listStatut[statut]}</ThemedText>
-                        <ThemedText variant="body1">Client : {ToCapitalize(name)}</ThemedText>
-                    </View>
-                  </View>
-              </View>
-              <View style={styles.renderSeparator}></View>
+        {/* <Pressable android_ripple={{color: Colors.light.tint, foreground: true}}> */}
+        <Pressable>
+          <View style={styles.clientContent}>
+            <View style={styles.informationContent}>
+                <ThemedText variant="commandTitle">{idCommand}</ThemedText>
+                <ThemedText variant="body1">{(formatDate(dateCreation)).toString()}</ThemedText>
+                <ThemedText variant="body1">{(formatDate(dateLivraison)).toString()}</ThemedText>
+                <ThemedText variant="price">{prix}€</ThemedText>
+                <ThemedText variant="body1">{listStatut[statut]}</ThemedText>
+                <ThemedText variant="body1">Client : {ToCapitalize(name)}</ThemedText>
+            </View>
           </View>
         </Pressable>
       </Link>
@@ -41,29 +37,21 @@ export function CommandCard({ id, idCommand, dateCreation, dateLivraison, prix, 
 }
 
 const styles = StyleSheet.create({
-    clientElement: {
-      paddingHorizontal: 12, 
-    },
-    clientCard: {
-      paddingVertical: 12,
-      flexDirection: "row",
-      gap: 3
-    },
     clientContent: {
       flexDirection: "row",
-      gap: 10
+      gap: 5,
     },
     informationContent: {
+      padding: 16,
       justifyContent: "space-evenly",
-    },
-    avatar: {
-      width: 70,
-      height: 70,
-      borderRadius: 50
-    },
-    renderSeparator: {
-      height: 1,
-      width: '100%',
-      backgroundColor: '#D3D3D3',
+      borderRadius: 15,
+      shadowColor: 'black',
+      shadowOffset: {
+        width: 0,
+        height: 2
+      },
+      shadowOpacity: .25,
+      shadowRadius: 4,
+      elevation: 3
     }
   })

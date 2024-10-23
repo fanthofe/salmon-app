@@ -1,9 +1,9 @@
-import { FlatList, StyleSheet } from "react-native";
+import { FlatList, ScrollView, StyleSheet } from "react-native";
 import { Card } from "@/components/Card";
 import { Body } from "@/components/Body";
 import { CommandCard } from "@/components/commandes/CommandCard";
 import { formatDate } from "@/functions/functions";
-import { DataCommandes } from "@/components/commandes/DataCommandes";
+import { DataCommandes } from "@/data-service/DataService";
 import { DayCommandCard } from "@/components/commandes/DayCommandCard";
 
 export default function indexCommandes() {
@@ -39,26 +39,13 @@ export default function indexCommandes() {
   return (
     <Body iconType="basket" mainTitle="Gestion des commandes">
         <Card style={styles.mainCard}>
-          {uniqDateCreations.map((val) => {
-            return (
-              <DayCommandCard commandes={data[val]} indexDate={val} />
-            )
-          })}
-        {/* <FlatList 
-            data={commandes}
-            renderItem={({item}) => 
-                <CommandCard 
-                    id={item.id}
-                    idCommand={item.idCommand}
-                    dateCreation={item.dateCreation}
-                    dateLivraison={item.dateLivraison}
-                    prix={item.prixTotal}
-                    statut={item.statut}
-                    name={item.clientName}
-                />
-            }
-            keyExtractor={(item) => item.id.toString()}
-        /> */}
+          <ScrollView>
+            {uniqDateCreations.map((val) => {
+              return (
+                <DayCommandCard commandes={data[val]} indexDate={val} />
+              )
+            })}
+          </ScrollView>
         </Card>
     </Body>
   );

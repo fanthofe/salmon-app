@@ -18,6 +18,11 @@ const styles = StyleSheet.create({
         fontSize: 18,
         lineHeight: 20,
     },
+    dateCommandTitle: {
+        fontWeight: "bold",
+        fontSize: 20,
+        lineHeight: 22,
+    },
     price: {
         fontWeight: "bold",
         fontSize: 16,
