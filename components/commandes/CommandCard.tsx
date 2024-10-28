@@ -1,7 +1,6 @@
 import { Pressable, StyleSheet, View } from "react-native";
 import { ThemedText } from "../ThemedText";
 import { Link } from "expo-router";
-import { Colors } from "@/constants/Colors";
 import { formatDate, ToCapitalize } from "@/functions/functions";
 
 type Props = {

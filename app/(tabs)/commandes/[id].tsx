@@ -10,6 +10,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function idCommandes() {
     const params = useLocalSearchParams();
+    console.log(params)
     const [lastname, setLastName] = useState('');
     const [firstname, setFirstName] = useState('');
     const [adresse, setAdresse] = useState('');
@@ -18,7 +19,7 @@ export default function idCommandes() {
     const [email, setEmail] = useState('');
 
     return (
-        <BodyChild iconType="" mainTitle={"Client " + params.id.toString()}>
+        <BodyChild iconType="" mainTitle={"Commande " + params.id.toString()}>
             <Card style={styles.mainCard}>
                 <SafeAreaView style={{paddingHorizontal: 15}}>
                     <View>
@@ -72,7 +73,7 @@ export default function idCommandes() {
                         />
                     </View>
                     <ButtonType 
-                        onPress={() => Alert.alert('Modification des informations clients')}
+                        onPress={() => Alert.alert('Modification des informations commandes')}
                         title="Enregistrer"
                         alt="Modifie les informations d'un client"
                     />
