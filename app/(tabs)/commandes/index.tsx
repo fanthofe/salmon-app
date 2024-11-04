@@ -1,10 +1,13 @@
-import { FlatList, ScrollView, StyleSheet } from "react-native";
+import { FlatList, ScrollView, StyleSheet, Text } from "react-native";
 import { Card } from "@/components/Card";
 import { Body } from "@/components/Body";
 import { CommandCard } from "@/components/commandes/CommandCard";
 import { formatDate } from "@/functions/functions";
 import { DataServiceCommandes } from "@/data-service/DataService";
 import { DayCommandCard } from "@/components/commandes/DayCommandCard";
+import { useEffect, useState } from "react";
+import { useFetchCommandes } from "@/hooks/useFetchQuery";
+import commandesData from "@/assets/json/commandes.json"
 
 export default function indexCommandes() {
 
@@ -29,8 +32,21 @@ export default function indexCommandes() {
   //     });
   //   }
   // );
-  const commandes = DataServiceCommandes();
-  console.log(commandes)
+
+
+  const [data, setData] = useState(commandesData);
+
+  // useEffect(() => {
+  //   fetch('./commandes.json')
+  //     .then(response => response.json())
+  //     .then(jsonData => setData(jsonData))
+  //     .catch(error => console.error(error));
+  // }, []);
+    
+
+
+  // const commandes = DataServiceCommandes();
+  // console.log(commandes)
 
   // const listDateCreation = commandes.map(date => formatDate(date.dateCreation).toString());
   // const uniqDateCreations = [... new Set(listDateCreation)];
@@ -41,11 +57,14 @@ export default function indexCommandes() {
     <Body iconType="basket" mainTitle="Gestion des commandes">
         <Card style={styles.mainCard}>
           <ScrollView>
-            {commandes.map((val) => {
+            {/* {commandes.map((val) => {
               return (
                 <DayCommandCard commandes={data[val]} indexDate={val} />
               )
-            })}
+            })} */}
+          {
+
+          }
           </ScrollView>
         </Card>
     </Body>

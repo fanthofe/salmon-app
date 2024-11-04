@@ -17,6 +17,16 @@ type API = {
     }
 }
 
+export function useFetchCommandes(filePath: string) {
+    return useQuery({
+        queryKey: [filePath],
+        queryFn: async () => {
+            return fetch(filePath).then(response => response.json())
+            .catch(error => console.error(error));
+        }
+    });
+}
+
 //useFetchQuery<> : les <> indique que l'on passe en clé "T" de type API
 export function useFetchQuery<T extends keyof API>(path: T) {
     return useQuery({

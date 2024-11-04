@@ -1,0 +1,1098 @@
+{
+    "05/11/2024": [
+        {
+            "clientName": "John Mayer26",
+            "dateCreation": "2024-11-05T18: 01: 22.552Z",
+            "dateLivraison": "2024-11-14T07: 15: 15.991Z",
+            "id": 26,
+            "idCommand": "CMD2024101826",
+            "prixTotal": "504",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.6262276384242993
+        },
+        {
+            "clientName": "John Mayer27",
+            "dateCreation": "2024-11-05T10: 42: 31.785Z",
+            "dateLivraison": "2024-11-15T18: 36: 35.703Z",
+            "id": 27,
+            "idCommand": "CMD2024101827",
+            "prixTotal": "532",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.3895784844017052
+        }
+    ],
+    "06/11/2024": [
+        {
+            "clientName": "John Mayer3",
+            "dateCreation": "2024-11-06T00: 07: 18.519Z",
+            "dateLivraison": "2024-11-10T06: 55: 09.966Z",
+            "id": 3,
+            "idCommand": "CMD202410183",
+            "prixTotal": "631",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.2468370653707754
+        },
+        {
+            "clientName": "John Mayer13",
+            "dateCreation": "2024-11-06T11: 41: 08.169Z",
+            "dateLivraison": "2024-11-08T11: 41: 46.575Z",
+            "id": 13,
+            "idCommand": "CMD2024101813",
+            "prixTotal": "376",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.2601240487324923
+        },
+        {
+            "clientName": "John Mayer14",
+            "dateCreation": "2024-11-06T18: 49: 03.112Z",
+            "dateLivraison": "2024-11-13T01: 34: 31.384Z",
+            "id": 14,
+            "idCommand": "CMD2024101814",
+            "prixTotal": "431",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.4174429360075008
+        },
+        {
+            "clientName": "John Mayer21",
+            "dateCreation": "2024-11-06T12: 11: 53.901Z",
+            "dateLivraison": "2024-11-10T14: 11: 20.378Z",
+            "id": 21,
+            "idCommand": "CMD2024101821",
+            "prixTotal": "678",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.7676600042321942
+        },
+        {
+            "clientName": "John Mayer29",
+            "dateCreation": "2024-11-06T19: 02: 57.259Z",
+            "dateLivraison": "2024-11-13T06: 28: 09.411Z",
+            "id": 29,
+            "idCommand": "CMD2024101829",
+            "prixTotal": "522",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.22521883988564323
+        }
+    ],
+    "08/11/2024": [
+        {
+            "clientName": "John Mayer2",
+            "dateCreation": "2024-11-08T00: 19: 10.087Z",
+            "dateLivraison": "2024-11-14T22: 29: 22.370Z",
+            "id": 2,
+            "idCommand": "CMD202410182",
+            "prixTotal": "676",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.3106849413598138
+        },
+        {
+            "clientName": "John Mayer8",
+            "dateCreation": "2024-11-08T15: 34: 49.263Z",
+            "dateLivraison": "2024-11-14T21: 49: 39.856Z",
+            "id": 8,
+            "idCommand": "CMD202410188",
+            "prixTotal": "613",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.0634894141235238
+        },
+        {
+            "clientName": "John Mayer10",
+            "dateCreation": "2024-11-08T14: 24: 11.953Z",
+            "dateLivraison": "2024-11-18T09: 14: 30.035Z",
+            "id": 10,
+            "idCommand": "CMD2024101810",
+            "prixTotal": "697",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.4460824942297297
+        },
+        {
+            "clientName": "John Mayer17",
+            "dateCreation": "2024-11-08T08: 42: 46.410Z",
+            "dateLivraison": "2024-11-13T02: 05: 55.652Z",
+            "id": 17,
+            "idCommand": "CMD2024101817",
+            "prixTotal": "374",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.367229121151616
+        },
+        {
+            "clientName": "John Mayer22",
+            "dateCreation": "2024-11-08T13: 53: 22.467Z",
+            "dateLivraison": "2024-11-10T02: 52: 20.003Z",
+            "id": 22,
+            "idCommand": "CMD2024101822",
+            "prixTotal": "512",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.1797853266496252
+        },
+        {
+            "clientName": "John Mayer25",
+            "dateCreation": "2024-11-08T09: 02: 15.872Z",
+            "dateLivraison": "2024-11-10T07: 39: 01.549Z",
+            "id": 25,
+            "idCommand": "CMD2024101825",
+            "prixTotal": "679",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.932647321327416
+        }
+    ],
+    "09/11/2024": [
+        {
+            "clientName": "John Mayer11",
+            "dateCreation": "2024-11-09T05: 01: 24.035Z",
+            "dateLivraison": "2024-11-17T05: 40: 42.267Z",
+            "id": 11,
+            "idCommand": "CMD2024101811",
+            "prixTotal": "530",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.17773426553560553
+        },
+        {
+            "clientName": "John Mayer18",
+            "dateCreation": "2024-11-09T18: 46: 29.080Z",
+            "dateLivraison": "2024-11-18T13: 40: 36.563Z",
+            "id": 18,
+            "idCommand": "CMD2024101818",
+            "prixTotal": "580",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.2107804614011524
+        }
+    ],
+    "10/11/2024": [
+        {
+            "clientName": "John Mayer4",
+            "dateCreation": "2024-11-10T09: 28: 20.202Z",
+            "dateLivraison": "2024-11-16T01: 58: 27.926Z",
+            "id": 4,
+            "idCommand": "CMD202410184",
+            "prixTotal": "404",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.618090807148629
+        },
+        {
+            "clientName": "John Mayer9",
+            "dateCreation": "2024-11-10T09: 43: 39.949Z",
+            "dateLivraison": "2024-11-15T15: 40: 24.550Z",
+            "id": 9,
+            "idCommand": "CMD202410189",
+            "prixTotal": "419",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.5293054644969197
+        },
+        {
+            "clientName": "John Mayer23",
+            "dateCreation": "2024-11-10T22: 14: 43.748Z",
+            "dateLivraison": "2024-11-21T04: 59: 50.661Z",
+            "id": 23,
+            "idCommand": "CMD2024101823",
+            "prixTotal": "507",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.5016460150818547
+        },
+        {
+            "clientName": "John Mayer30",
+            "dateCreation": "2024-11-10T22: 53: 14.719Z",
+            "dateLivraison": "2024-11-19T00: 39: 27.120Z",
+            "id": 30,
+            "idCommand": "CMD2024101830",
+            "prixTotal": "540",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.006033384737455852
+        }
+    ],
+    "11/11/2024": [
+        {
+            "clientName": "John Mayer1",
+            "dateCreation": "2024-11-11T09: 59: 10.235Z",
+            "dateLivraison": "2024-11-17T03: 27: 43.574Z",
+            "id": 1,
+            "idCommand": "CMD202410181",
+            "prixTotal": "616",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.8402100997177482
+        },
+        {
+            "clientName": "John Mayer12",
+            "dateCreation": "2024-11-11T06: 42: 09.256Z",
+            "dateLivraison": "2024-11-13T17: 16: 37.412Z",
+            "id": 12,
+            "idCommand": "CMD2024101812",
+            "prixTotal": "423",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.6472377859112726
+        }
+    ],
+    "12/11/2024": [
+        {
+            "clientName": "John Mayer5",
+            "dateCreation": "2024-11-12T03: 10: 58.720Z",
+            "dateLivraison": "2024-11-18T23: 24: 57.840Z",
+            "id": 5,
+            "idCommand": "CMD202410185",
+            "prixTotal": "613",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.0990164768329131
+        },
+        {
+            "clientName": "John Mayer15",
+            "dateCreation": "2024-11-12T07: 07: 23.137Z",
+            "dateLivraison": "2024-11-18T13: 50: 08.040Z",
+            "id": 15,
+            "idCommand": "CMD2024101815",
+            "prixTotal": "444",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.7660000669698201
+        },
+        {
+            "clientName": "John Mayer16",
+            "dateCreation": "2024-11-12T01: 05: 09.137Z",
+            "dateLivraison": "2024-11-16T09: 15: 00.868Z",
+            "id": 16,
+            "idCommand": "CMD2024101816",
+            "prixTotal": "687",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.9683724524657146
+        },
+        {
+            "clientName": "John Mayer24",
+            "dateCreation": "2024-11-12T14: 47: 38.252Z",
+            "dateLivraison": "2024-11-21T17: 16: 06.339Z",
+            "id": 24,
+            "idCommand": "CMD2024101824",
+            "prixTotal": "460",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.3797362273002554
+        }
+    ],
+    "14/11/2024": [
+        {
+            "clientName": "John Mayer6",
+            "dateCreation": "2024-11-14T08: 13: 24.179Z",
+            "dateLivraison": "2024-11-16T14: 27: 23.282Z",
+            "id": 6,
+            "idCommand": "CMD202410186",
+            "prixTotal": "449",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.5032854625319998
+        },
+        {
+            "clientName": "John Mayer7",
+            "dateCreation": "2024-11-14T04: 11: 18.785Z",
+            "dateLivraison": "2024-11-19T10: 59: 00.541Z",
+            "id": 7,
+            "idCommand": "CMD202410187",
+            "prixTotal": "645",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.9145349694861933
+        },
+        {
+            "clientName": "John Mayer19",
+            "dateCreation": "2024-11-14T22: 29: 15.105Z",
+            "dateLivraison": "2024-11-24T23: 40: 18.963Z",
+            "id": 19,
+            "idCommand": "CMD2024101819",
+            "prixTotal": "510",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.33296430883241485
+        },
+        {
+            "clientName": "John Mayer20",
+            "dateCreation": "2024-11-14T09: 37: 38.116Z",
+            "dateLivraison": "2024-11-18T10: 45: 43.875Z",
+            "id": 20,
+            "idCommand": "CMD2024101820",
+            "prixTotal": "625",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 0.4674856524845853
+        },
+        {
+            "clientName": "John Mayer28",
+            "dateCreation": "2024-11-14T19: 58: 51.923Z",
+            "dateLivraison": "2024-11-17T23: 50: 58.811Z",
+            "id": 28,
+            "idCommand": "CMD2024101828",
+            "prixTotal": "428",
+            "products": [
+                {
+                    "id": 1,
+                    "prix": 350,
+                    "quantite": 5
+                },
+                {
+                    "id": 2,
+                    "prix": 120,
+                    "quantite": 4
+                },
+                {
+                    "id": 3,
+                    "prix": 300,
+                    "quantite": 4
+                },
+                {
+                    "id": 4,
+                    "prix": 475,
+                    "quantite": 6
+                },
+                {
+                    "id": 5,
+                    "prix": 50,
+                    "quantite": 2
+                }
+            ],
+            "statut": 1.5556413088940932
+        }
+    ]
+}
