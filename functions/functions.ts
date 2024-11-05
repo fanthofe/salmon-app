@@ -7,7 +7,11 @@ export function ToCapitalize(word: string) {
     return word[0].toUpperCase() + word.substring(1, word.length).toLowerCase();
 }
 
-export function formatDate(date: Date) {
+export function formatDate(date: Date|string) {
+    if (typeof date === "string") {
+        date = new Date(date);
+    }
+    
     var d = date,
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate(),

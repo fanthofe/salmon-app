@@ -63,7 +63,9 @@ export default function indexCommandes() {
               )
             })} */}
           {
-
+            data.data?.map((val) => {
+              return (<DayCommandCard commandes={val.values} indexDate={val.date} />)
+            })
           }
           </ScrollView>
         </Card>
