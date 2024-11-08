@@ -2,7 +2,7 @@ import { FlatList, ActivityIndicator, StyleSheet, View } from "react-native";
 import { Card } from "@/components/Card";
 import { Body } from "@/components/Body";
 import { ClientCard } from "@/components/clients/ClientCard";
-import { useFetchQuery, useInfiniteFetchQuery } from "@/hooks/useFetchQuery";
+import { useFetchQuery, useFetchQuerySheet, useInfiniteFetchQuery } from "@/hooks/useFetchQuery";
 import { getClientId } from "@/functions/functions";
 import { Colors } from "@/constants/Colors";
 import { SearchBar } from "@/components/SearchBar";
@@ -16,7 +16,7 @@ export default function indexClients() {
     //     telephone: '+ 33 7 88 59 10 31'
     // }));
 
-    const {data, isFetching, fetchNextPage} = useInfiniteFetchQuery('/pokemon?limit=20');
+    // const {data, isFetching, fetchNextPage} = useInfiniteFetchQuery('/pokemon?limit=20');
     const [search, setSearch] = useState('');
     const [sortKey, setSortKey] = useState<"id" | "name">('id');
     const rawClientes = useFetchQuery('/pokemon?limit=151');
@@ -24,15 +24,28 @@ export default function indexClients() {
         r => ({name: r.name, id: getClientId(r.url)})
     ) ?? [];
 
-    const clientes = data?.pages.flatMap(page => page.results.map(
-        r => ({name: r.name, id: getClientId(r.url)})
-    )) ?? [];
+    // const clientes = data?.pages.flatMap(page => page.results.map(
+    //     r => ({name: r.name, id: getClientId(r.url)})
+    // )) ?? [];
 
-    const filteredClientes = [...(search 
-            ? searchClientes?.filter((p) => p.name.includes(search.toLowerCase()) 
-            || p.id.toString() === search) 
-            : clientes),
-    ].sort((a, b) => a[sortKey] < b[sortKey] ? -1 : 1);
+    // const filteredClientes = [...(search 
+    //         ? searchClientes?.filter((p) => p.name.includes(search.toLowerCase()) 
+    //         || p.id.toString() === search) 
+    //         : clientes),
+    // ].sort((a, b) => a[sortKey] < b[sortKey] ? -1 : 1);
+
+    const sheetClients = useFetchQuerySheet('/u19ptl2fe8st8?sheet=utilisateurs');
+    const clients = sheetClients.data?.map( r => ({
+        id: r.id,
+        command_id: r.command_id,
+        nom: r.nom,
+        prenom: r.prenom,
+        adresse: r.adresse,
+        codepostal: r.codepostal,
+        ville: r.ville,
+        email: r.email,
+        telephone: r.telephone
+    })) ?? [];
 
     return (
         <Body iconType="people" mainTitle="Gestion des clients">
@@ -41,7 +54,7 @@ export default function indexClients() {
                 <SortButton value={sortKey} onChange={setSortKey} />
             </View>
             <Card style={styles.mainCard}>
-                <FlatList 
+                {/* <FlatList 
                     data={filteredClientes}
                     renderItem={({item}) => 
                         <ClientCard 
@@ -56,6 +69,22 @@ export default function indexClients() {
                     }
                     // Détecte la fin d'une liste
                     onEndReached={search ? undefined : () => fetchNextPage()}
+                /> */}
+                    <FlatList 
+                    data={clients}
+                    renderItem={({item}) => 
+                        <ClientCard 
+                            id={item.id}
+                            name={item.nom}
+                            telephone={item.telephone} />
+                    }
+                    keyExtractor={(item) => item.id.toString()}
+                    // Ajoute un loader à chaque nouveau chargement de la page
+                    // ListFooterComponent={
+                    //     isFetching ? <View style={styles.loader}><ActivityIndicator size='large' color={Colors.light.tint} /></View> : null
+                    // }
+                    // // Détecte la fin d'une liste
+                    // onEndReached={search ? undefined : () => fetchNextPage()}
                 />
             </Card>
         </Body>
